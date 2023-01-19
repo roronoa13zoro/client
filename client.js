@@ -2,7 +2,6 @@ window.__SKYWAY_KEY__ = '73c9b442-df7d-448f-a283-5d117794ba73';
 
 let localStream;
 const myVideo = document.getElementById('my-video');
-const theirVideo = document.getElementById('their-video');
 const toggleCamera = document.getElementById('js-toggle-camera');
 const toggleMicrophone = document.getElementById('js-toggle-microphone');
 const cameraStatus = document.getElementById('camera-status');
@@ -27,7 +26,6 @@ peer.on('open', () => {
 });
 
 document.getElementById('call-btn').onclick = () => {
-    const theirID = document.getElementById('their-id').value;
     const mediaConnection = peer.call('ENiTr2HBuVL47oPE', localStream);
     setEventListener(mediaConnection);
 };
