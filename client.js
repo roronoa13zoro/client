@@ -28,7 +28,7 @@ peer.on('open', () => {
 
 document.getElementById('call-btn').onclick = () => {
     const theirID = document.getElementById('their-id').value;
-    const mediaConnection = peer.call(theirID, localStream);
+    const mediaConnection = peer.call('xUK3rZq63inmgHGS', localStream);
     setEventListener(mediaConnection);
 };
 
